@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="../css/budgettracker.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Budget Tracker</title>
+</head>
+
+<body style="background-image: url(../images/calculaterbackground.jg);" ;>
+    <header>
+        <img src="../images/icon1.png" style="height: 50px;width: auto; float: left; margin-right: 10px;">
+        <h1>Budget Tracker</h1>
+    </header>
+
+    <nav class="clearfix">
+        <a href="../pages/index2.html">Home</a>
+        <a href="../pages/budgettracker.html">Budget Planning</a>
+        <a href="../pages/savingGoles.html">SavingGoals</a>
+        <a href="../pages/Aboutus.html">About</a>
+        <a href="../pages/ContactUs.html">ContactUs</a>
+    </nav><br>
+
+    <div class="content">
+        <div id="incomeSection">
+            <form id="incomeForm">
+                <label for="userInput">Enter Your Budget:</label>
+                <input type="text" id="userInput" oninput="updateContent()">
+                <p id="output">Your Budget will reflect here.</p>
+            </form>
+        </div>
+
+        <div class="expenses-list">
+            <table border="2px" solid black>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-table-body">
+                    <div class="input-section">
+                        <label for="category-input">Category:</label>
+                        <input type="text" id="category-input">
+                        <label for="amount-input">Amount:</label>
+                        <input type="number" id="amount-input">
+                        <label for="date-input">Date:</label>
+                        <input type="date" id="date-input">
+                        <button id="add-btn" onclick="addExpense()">Add</button>
+                    </div>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total:</td>
+                        <td id="total-amount"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        
+
+        <!-- Download Reports button placed below the table to the right -->
+        <div>
+            <button id="Download-button" onclick="downloadReports()">Download Reports</button>
+        </div>
+    </div>
+
+    <p id="balance" style="display: none;"></p>
+
+    <p id="remainingPercentage" style="font-size: 20px; display: none;">Remaining Budget: <span id="percentage"></span></p>
+    
+
+    <canvas id="expense-chart" width="500px" height="500px"></canvas>
+
+   
+
+    <script src="../java script/budgettracker.js"></script>
+    </div>
+
+    <div class="text-and-image-container">
+        <!-- Image on the left -->
+        <div class="image-content">
+            <img src="../images/budget2.png" style="width: 100%;">
+        </div>
+
+        <!-- Text content on the right -->
+        <div class="text-content">
+            <p style="font-size: 20px;"><b style="font-size: 27px;">Effortless Budgeting:</b> <br><br> Discover
+                simplicity in financial management on our <br>Budget Tracker page. With
+                an intuitive interface,<br> categorize expenses, set budgets, and receive <br> real-time updates. Visual
+                charts
+                offer insights, and one-click <br> downloads make detailed financial reports accessible.</p>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    <footer>
+        <div id="foot">
+            <div id="social-icons" style="float: right; margin-top: 10px;">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+
+
+
+            </div><br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.4211830757217!2d75.01490021863059!3d15.43801469822389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d26482ea0467%3A0xac2fc37c829cdbec!2sKoushalya%20Bba%20Department%20Jss%20College%20Dharwad!5e0!3m2!1sen!2sin!4v1704185896996!5m2!1sen!2sin"
+                width="240" height="240" style="border:0;float:right;margin-top: 0%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div id="footnav" style="float: left; text-align: left; text-decoration: none; color: white;">
+                <p><a href="../pages/index2.html">Home</a></p>
+                <p><a href="../pages/budgettracker.html">Budget planning</a></p>
+                <p><a href="../pages/savingGoles.html">SavingGoals</a></p>
+                <p><a href="../pages/Aboutus.html">About</a></p>
+                <p><a href="../pages/ContactUs.html">ContactUs</a></p>
+            </div><br><br><br><br><br><br><br><br>
+            <div class="p">
+                <p>&copy; 2023 Budget Tracker. All rights reserved.</p>
+                <p><a href="PrivacyPolicy.html">Privacy Policy</a> <a href="TermsOfService.html">Terms of Service</a>
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
+</body>
+
+</html>

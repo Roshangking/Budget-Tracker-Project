@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About</title>
+    <!-- Your existing head content ... -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body>
+    <!-- Your existing body content ... -->
+    <header>
+        <img src="../images/icon1.png" style="height: 50px; width: auto; float: left; margin-right: 10px;">
+        <h1>Budget Tracker</h1>
+    </header>
+
+    <nav class="clearfix">
+        <a href="../pages/index2.html">Home</a>
+        <a href="../pages/budgettracker.html">Budget planning</a>
+        <a href="../pages/savingGoles.html">SavingGoals</a>
+        <a href="../pages/Aboutus.html">About</a>
+        <a href="../pages/ContactUs.html">ContactUs</a>
+    </nav><br>
+
+    <div style="font-family: Arial, sans-serif;margin: auto;">
+        <h3 style="font-size: 40px; text-align: center;">Welcome to Budget Tracker</h3>
+        <div class="flex-container">
+            <div id="a" style="font-family: Open Sans; font-size: 20px;text-align: justify; width: 50%;">
+                <h3 style="font-size: 35px;">Our Mission</h3>
+                <p>
+                    At Budget Tracker, we are dedicated to simplifying the complex world of finance, making it
+                    easier than ever for you to take charge of your financial well-being. Our mission is simple: empower
+                    you to take control of your finances effortlessly, so you can say goodbye to financial stress and
+                    hello to a brighter financial future.
+                </p>
+            </div>
+            <!-- Image space to the right of Our Mission -->
+            <div class="image-container">
+                <img src="../images/ourmission.png" alt="Your Image" class="mission-image">
+            </div>
+        </div>
+
+        <!-- "Why Choose Us" section moved underneath -->
+        <div id="b" style="font-family: Open Sans; font-size: 20px; margin-top: 20px;margin-left:150px;">
+            <h3 style="font-size: 35px;">Why Choose Us:</h3>
+            <p>1. Simplicity: Streamlined tools for easy budgeting.</p>
+            <p>2. Empowerment: Gain insights to make informed financial decisions.</p>
+            <p>3. Security: Your data, your privacy - our top priority.</p>
+        </div>
+
+        <br><br>
+        <h3 style="text-align: center;">Join us on the journey to financial well-being. Let's make every rupee count.
+        </h3>
+        <br><br>
+        <h2 style="text-align: center;">Meet Our Team</h2>
+
+        <div style="font-family: Arial, sans-serif;">
+            <!-- Your existing content ... -->
+
+            <!-- Team member details for Kartik B -->
+            <div class="column">
+                <div class="card" onclick="kartik()">
+                    <img src="../images/karimg.png" alt="Mike"
+                        style="width:auto; padding: 20px; height: 250px;">
+                    <div class="container">
+                        <h2>Kartik B </h2>
+                        <div class="card-con">
+                            <p class="title" style="color: #000;">Student of CPIT</p>
+                            <p>Qualification:10th pass</p>
+                            <p>Email:kartikbadiger966@gmail.com</p>
+                            <p>Github:<a href="https://github.com/kartikbadiger/Budget-Tracker-Project.git">Budget-Tracker-Project</a></p>
+                            <p>Contact : 8546802405</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function kartik() {
+                        var x = document.getElementsByClassName("card-con")[0];
+                        if (x.style.display === "none" || x.style.display === "") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+
+            <!-- Team member details for Roshan G -->
+            <div class="column">
+                <div onclick="Roshan()" class="card">
+                    <img src="../images/rosimg.png" alt="Mike"
+                        style="width:auto; padding: 20px; height: 250px;">
+                    <div class="container">
+                        <h2>Roshan G</h2>
+                        <div class="card-con">
+                            <p class="title" style="color: #000;">Student of CPIT</p>
+                            <p>Qualification:10th pass</p>
+                            <p>Email:Roshang2807@gmail.com</p>
+                            <p>Github:<a href="https://github.com/Roshangking/Budget_tracker.git">Budget-Tracker-Project</a></p>
+                            <p>Contact : 9353219729</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function Roshan() {
+                        var x = document.getElementsByClassName("card-con")[1];
+                        if (x.style.display === "none" || x.style.display === "") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+
+            <!-- Team member details for Maheshwari K -->
+            <div class="column">
+                <div onclick="Maheshwari()" class="card">
+                    <img src="../images/msk.png" alt="John"
+                        style="width:auto; padding: 20px; height: 250px;">
+                    <div class="container">
+                        <h2>Maheshwari K</h2>
+                        <div class="card-con">
+                            <p class="title" style="color: #000;">Student of CPIT</p>
+                            <p>Qualification:10th pass.</p>
+                            <p>Email:Mahesharikurubar@gmail.com</p>
+                            <p>Github:<a href="https://github.com/kartikbadiger/Budget-Tracker-Project.git">Budget-Tracker-Project</a></p>
+                            <p>Contact : 8217486069</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function Maheshwari() {
+                        var x = document.getElementsByClassName("card-con")[2];
+                        if (x.style.display === "none" || x.style.display === "") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+            <div class="column">
+                <div onclick="Manisha()" class="card">
+                    <img src="../images/msk.png" alt="John"
+                        style="width:auto; padding: 20px; height: 250px;">
+                    <div class="container">
+                        <h2>Manisha A</h2>
+                        <div class="card-con">
+                            <p class="title" style="color: #000;">Student of CPIT</p>
+                            <p>Qualification:10th pass.</p>
+                            <p>Email:Manishaarya@gmail.com</p>
+                            <p>Github:<a href="https://github.com/kartikbadiger/Budget-Tracker-Project.git">Budget-Tracker-Project</a></p>
+                            <p>Contact : 7506115938</p>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function Manisha() {
+                        var x = document.getElementsByClassName("card-con")[3];
+                        if (x.style.display === "none" || x.style.display === "") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+
+            <!-- Team member details for another member -->
+        </div>
+
+        <footer>
+            <div id="foot">
+                <div id="social-icons" style="float: right; margin-top: 10px;">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+    
+    
+    
+                </div><br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.4211830757217!2d75.01490021863059!3d15.43801469822389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d26482ea0467%3A0xac2fc37c829cdbec!2sKoushalya%20Bba%20Department%20Jss%20College%20Dharwad!5e0!3m2!1sen!2sin!4v1704185896996!5m2!1sen!2sin"
+                    width="240" height="290" style="border:0;float:right;margin-top: 0%;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                <div id="footnav" style="float: left; text-align: left; text-decoration: none; color: white;">
+                    <p><a href="pages\index2.html">Home</a></p>
+                    <p><a href="../pages/budgettracker.html">Budget planning</a></p>
+                    <p><a href="../pages/savingGoles.html">SavingGoals</a></p>
+                    <p><a href="../pages/Aboutus.html">About</a></p>
+                    <p><a href="../pages/ContactUs.html">ContactUs</a></p>
+                </div><br><br><br><br><br><br><br><br>
+                <div class="p">
+                    <p>&copy; 2023 Budget Tracker. All rights reserved.</p>
+                    <p><a href="PrivacyPolicy.html">Privacy Policy</a> <a href="TermsOfService.html">Terms of Service</a>
+                    </p>
+                </div>
+    
+    
+            </div>
+    
+    
+    
+        </footer>
+    </body>
+</body>
+
+</html>

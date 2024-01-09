@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Budgethomepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/feed1.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="../images/icon1.png" style="height: 50px;width: auto; float: left; margin-right: 10px;">
+        <h1>Budget Tracker</h1>
+    </header>
+
+    <nav class="clearfix">
+        <a href="index.html">Home</a>
+        <a href="../pages/budgettracker.html">Budget planning</a>
+        <a href="../pages/savingGoles.html">SavingGoals</a>
+        <a href="../pages/Aboutus.html">About</a>
+        <a href="../pages/ContactUs.html">ContactUs</a>
+        
+    </nav><br>
+    <section>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="../images/slider1.png" style="width: 100%;">
+                <div class="text">"Spend less than you earn; save more than you spend."</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="../images/slider2.png" style="width: 100%;">
+                <div class="text">"Budgeting is the roadmap to financial freedom."</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="../images/slider3.png" style="width: 100%;">
+                <div class="text">"A dollar saved is a dollar earned."</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4/ 5</div>
+                <img src="../images/slider4.png" style="width: 100%;">
+                <div class="text">"Plan your budget, plan your future."</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5/ 5</div>
+                <img src="../images/slider5.png" style="width: 100%;">
+                <div class="text">"Budgeting: Making your money work for you."<div>
+                    </div>
+
+
+                </div>
+                <br>
+    </section>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <button class="button" style="vertical-align:middle"><span><a
+                href="../pages/index2.html">Plan Your Budget</a></span>
+    </button>
+
+
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+
+    <div id="row">
+        <div class="column">
+            <h2 id="whatisbudget" onclick="showwhatisbudget()">What is Budget?</h2>
+
+            <div class="myDIV">
+                Budget planning is creating a money plan. You decide how much to spend, save, and earn. It
+                helps you make smart money choices, avoid overspending, and reach your financial goals.
+            </div>
+        </div>
+
+
+
+        <script>
+            function showwhatisbudget() {
+                var x = document.getElementsByClassName("myDIV")[0];
+                if (x.style.display === "none" || x.style.display === "") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+        <div class="column">
+            <h2 id="whatisbudgetplanning" onclick="whatisbudgetplanning()">What is Budget Planning?</h2>
+            <div class="myDIV">
+                Budget planning is the strategic process of mapping out your finances. It includes determining
+                your income, allocating funds to various aspects of your life, and setting aside savings. This helps you
+                make informed financial decisions, prevent overspending, and progress towards your goals by aligning
+                your spending with your priorities and income.
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function whatisbudgetplanning() {
+            var x = document.getElementsByClassName("myDIV")[1];
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+
+    <div id="row">
+        <div class="column">
+            <h2 id="ShouldIMaintainandUpdateMyBudget" onclick="ShouldIMaintainandUpdateMyBudget()">Should I Maintain and
+                Update My Budget?</h2>
+            <div class="myDIV">
+                In the initial months, regularly review your account statements to track your spending against your
+                budget. Adjustments should be made to ensure your budget aligns with your actual expenses, ensuring its
+                ongoing relevance in your financial planning.
+            </div>
+        </div>
+        <script>
+            function ShouldIMaintainandUpdateMyBudget() {
+                var x = document.getElementsByClassName("myDIV")[2];
+                if (x.style.display === "none" || x.style.display === "") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+
+        <div class="column">
+            <h2 id="Whataremypriorities" onclick="Whataremypriorities()">What are my priorities?</h2>
+            <div class="myDIV">
+                Prioritize debt repayment and establish an emergency fund. Assess your savings and retirement
+                investments. By outlining priorities and defining goals, identify budgetary flexibility and create a
+                clear strategy. Allocate more than minimum payments for debts when possible.
+            </div>
+        </div>
+    </div>
+    <script>
+        function Whataremypriorities() {
+            var x = document.getElementsByClassName("myDIV")[3];
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+    <section id="feedback" style="color: blueviolet; margin-bottom: 40px auto;">
+
+
+        <h1 id="fonth" style="text-align: center; color:brown;"><u>Feedback</u></h1>
+        <div class="feedColumn">
+
+            <div class="feedCard">
+
+
+                <img src="../images/feedimages.png" class="img">
+                <h4 class="h3">Ram</h4>
+                <p class="p1">User interface ease of use.
+                    Clarity in entering and managing expenses.
+                    How well the tool helps in understanding and sticking to the budget. </p>
+
+            </div>
+        </div>
+
+        <div class="feedColumn">
+            <div class="feedCard">
+                <img src="../images/feedimages1.png" class="img">
+                <h4 class="h3">Alex</h4>
+                <p class="p1">Code structure and organization.
+                    Use of best practices in JavaScript and HTML/CSS.
+                    Suggestions for potential improvements or optimizations in the code.</p>
+
+            </div>
+        </div>
+
+        <div class="feedColumn">
+            <div class="feedCard">
+                <img src="../images/feedimages3.png" class="img">
+                <h4 class="h3">James</h4>
+                <p class="p1"> Alignment of the project with business goals.
+                    Potential for scalability and future enhancements.
+                    How well the project meets the intended purpose and any additional features that could add value.
+                </p>
+            </div>
+        </div>
+
+        </div>
+    </section><br>
+    <div style="clear: both; margin-bottom: 20px;"></div>
+
+    <iframe width=" 640px" height="360px" style=" margin-bottom: 30px; margin-left: 400px;"
+    src="https://www.youtube.com/embed/INnPo0QPXf4?si=2NY-5uBjRumnORSw">
+    </iframe>
+
+
+    <footer>
+        <div id="foot">
+            <div id="social-icons" style="float: right; margin-top: 10px;">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+
+
+
+            </div><br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.4211830757217!2d75.01490021863059!3d15.43801469822389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d26482ea0467%3A0xac2fc37c829cdbec!2sKoushalya%20Bba%20Department%20Jss%20College%20Dharwad!5e0!3m2!1sen!2sin!4v1704185896996!5m2!1sen!2sin"
+                width="240" height="240" style="border:0;float:right;margin-top: 0%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div id="footnav" style="float: left; text-align: left; text-decoration: none; color: white;">
+                <p><a href="../pages/index2.html">Home</a></p>
+                <p><a href="../pages/budgettracker.html">Budget planning</a></p>
+                <p><a href="../pages/savingGoles.html">SavingGoals</a></p>
+                <p><a href="../pages/Aboutus.html">About</a></p>
+                <p><a href="../pages/ContactUs.html">ContactUs</a></p>
+            </div><br><br><br><br><br><br><br><br>
+            <div class="p">
+                <p>&copy; 2023 Budget Tracker. All rights reserved.</p>
+                <p><a href="PrivacyPolicy.html">Privacy Policy</a> <a href="TermsOfService.html">Terms of Service</a>
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
+</body>
+
+</html>

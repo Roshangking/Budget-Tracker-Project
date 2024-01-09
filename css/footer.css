@@ -1,0 +1,103 @@
+#foot {
+    background-color: #85bf4b;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    overflow: hidden;
+
+}
+
+#footnav p a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+
+
+#social-icons,
+#footnav,
+#contact-info {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+}
+
+#social-icons a {
+    margin-right: 10px;
+}
+
+#contact-info h1 {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+#contact-info p a {
+    text-decoration: none;
+
+}
+
+#con p {
+    margin: 20px;
+    margin-top: 0%;
+}
+
+
+#social-icons {
+    display: flex;
+    flex-direction: column;
+    /* Align items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    margin-top: 10px;
+}
+
+#social-icons a {
+    margin-bottom: 0px;
+    /* Add some space between each social icon */
+}
+
+.p {
+    margin-top: -80px;
+    float: right;
+    left: 100px;
+
+}
+
+.p {
+    margin-right: 90px;
+    
+}

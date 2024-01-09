@@ -1,0 +1,266 @@
+header {
+  background-color:  #85bf4b;
+  color: #ffffff;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: left
+}
+
+nav {
+  background-color: #50bfbf;
+  overflow: hidden;
+  width: 100%;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-size: 15px;
+  font-style: bold;
+
+}
+
+nav a:hover {
+  background-color: #00000048;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #0a0a0ac9;
+  text-align: justify;
+  background-color: #b6e2d3;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width: 300px;
+  background-color:#ffffff;
+}
+.card:hover{
+  background-color: #0000002a;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+      width: 100%;
+      display: block;
+  }
+}
+
+h2 {
+  text-decoration: solid;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card-con{
+  display: none;
+}
+
+/* Adjustments for displaying all team members in one row */
+.column {
+  width: 25%; /* Set the width to 25% to accommodate all four members in a row */
+}
+
+.card {
+  width: 100%; /* Adjust the width of the card to fit within the column */
+  cursor: pointer;
+}
+
+#foot {
+  background-color:#85bf4b;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  overflow: hidden;
+  width: 100%;
+  
+  
+}
+
+#footnav p a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  width: 70px;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  width: 70px;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  width: 70px;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  width: 70px;
+  color: white;
+}
+
+#social-icons,
+#footnav,
+#contact-info {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px;
+}
+
+#social-icons a {
+  margin-right: 10px;
+  background-size: cover;
+}
+
+#contact-info h1 {
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+#contact-info p a {
+  text-decoration: none;
+}
+
+#con p {
+  margin:20px;
+  margin-top:0%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.mission-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+#social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#social-icons a {
+  margin-bottom: 0px;
+}
+
+.p {
+  margin-top: -80px;
+  float: right;
+  left: 100px;
+}
+
+.p {
+  margin-right: 90px;
+}
+

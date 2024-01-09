@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #b6e2d3;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 90px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
+            margin-bottom: 10px;
+            margin-left: 550px;
+            background-color: #ffffff;
+        }
+
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .switch {
+            margin-top: 20px;
+        }
+
+        header {
+            background-color: #85bf4b;
+            color: #ffff;
+            padding: 1em;
+            text-align: center;
+            width: 97.5%;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: left;
+        }
+
+        nav {
+            background-color: #50bfbf;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #ffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            font-size: 15px;
+            font-style: bold;
+
+        }
+
+        nav a:hover {
+            background-color: #00000048;
+        }
+        #foot {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+            width: 97.5%;
+            float: left;
+        }
+
+        #footnav p a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            width: 30px;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            width: 30px;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            width: 30px;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            width: 30px;
+            color: white;
+        }
+
+        #foot {
+            background-color: #85bf4b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        #social-icons,
+        #footnav,
+        #contact-info {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 20px;
+        }
+
+        #social-icons a {
+            margin-right: 10px;
+        }
+
+        #con p {
+            margin: 20px;
+            margin-top: 0%;
+        }
+
+        .center-video {
+            width: 640px;
+            /* Adjust the width as needed */
+            height: 360px;
+            /* Adjust the height as needed */
+            margin-bottom: 30px;
+            /* Adjust the value to maintain a gap between top content and video */
+
+        }
+
+        #social-icons {
+            display: flex;
+
+            flex-direction: column;
+            /* Align items vertically */
+            align-items: center;
+            /* Center items horizontally */
+            margin-top: 10px;
+        }
+
+        #social-icons a {
+            margin-bottom: 0px;
+            /* Add some space between each social icon */
+        }
+
+        .p {
+            margin-top: -80px;
+            float: right;
+            left: 100px;
+
+        }
+
+        .p {
+            margin-right: 90px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../images/icon1.png" style="height: 50px;width: auto; float: left; margin-right: 10px;">
+        <h1>Budget Tracker</h1>
+    </header>
+
+    <nav class="clearfix">
+        <a href="../index.html">Home</a>
+
+        <div onclick="login()">
+            <a href="../pages/signup.html">Budget planning</a>
+            <a href="../pages/signup.html">SavingGoles</a>
+            <a href="../pages/signup.html">About</a>
+            <a href="../pages/signup.html">ContactUs</a>
+            <script>
+                function login(){
+                    alert("You Have not loggedin")
+                }
+            </script>
+            </div>
+
+        <a style="float: right; text-align: last;" href="../pages/signup.html">LogIn</a>
+    </nav><br>
+
+    <form id="forgotPasswordForm" onsubmit="return verifyAndRedirect()" action="../pages/confirmation.html">
+        <h2>Forgot Password</h2>
+        <p>Enter your email address to reset your password.</p>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="button" onclick="sendOTP()">Verify</button>
+        <label for="OTP">OTP:</label>
+        <input type="text" id="OTP" name="OTP" required>
+
+        <button type="submit">Reset Password</button>
+    </form>
+
+    <script>
+        function sendOTP() {
+            // Add logic to send OTP to the entered email address
+            alert("OTP sent successfully!");
+        }
+
+        function verifyAndRedirect() {
+            var enteredOTP = document.getElementById('OTP').value;
+
+            // Add logic to verify the entered OTP
+            if (enteredOTP === '123456') { // Replace '123456' with the actual OTP
+                alert("OTP verification successful!");
+                window.location.replace = "D:\BudgetTrackerProject\pages\signup.html";
+
+                return true;
+            } else {
+                alert("Invalid OTP. Please try again.");
+                return false;
+            }
+        }
+    </script>
+    <footer>
+        <div id="foot">
+            <div id="social-icons" style="float: right; margin-top: 10px;">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+
+
+
+            </div><br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.4211830757217!2d75.01490021863059!3d15.43801469822389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d26482ea0467%3A0xac2fc37c829cdbec!2sKoushalya%20Bba%20Department%20Jss%20College%20Dharwad!5e0!3m2!1sen!2sin!4v1704185896996!5m2!1sen!2sin"
+                width="240" height="240" style="border:0;float:right;margin-top: 0%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div id="footnav" style="float: left; text-align: left; text-decoration: none; color: white;">
+                <p><a href="../index.html">Home</a></p>
+                <div onclick="login()">
+                <p><a href="../pages/signup.html">Budget planning</a></p>
+                <p><a href="../pages/signup.html">SavingGoals</a></p>
+                <p><a href="../pages/signup.html">About</a></p>
+                <p><a href="../pages/signup.html">ContactUs</a></p>
+                <script>
+                    function login(){
+                        alert("You Have not loggedin")
+                    }
+                </script>
+
+            </div>
+            </div><br><br><br><br><br><br><br><br>
+            <div class="p">
+                <p>&copy; 2023 Budget Tracker. All rights reserved.</p>
+                <p><a href="PrivacyPolicy.html">Privacy Policy</a> <a href="TermsOfService.html">Terms of Service</a>
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>

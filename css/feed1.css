@@ -1,0 +1,51 @@
+/***********************************FEEDBACK section******************************/ 
+ /******** FEEDBACK (NARMAL) SECTION CODE *********/      
+ #feedback{
+  margin-bottom: 20px auto;
+ }
+ 
+.feedColumn {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-top: 8%;
+  margin-left: 50px;
+ }
+
+.img{
+    margin-left: -200px;
+     margin-top: 25px;
+     opacity: 0.8;
+     width:50px;
+     height:50px;
+     border-radius: 50%;
+  }
+
+.feedCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 280px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  background-color: #f1f1f1;
+  margin-left: 30px;
+}
+  .feedCard:hover{
+  transform: scale(1.1);
+  background-color: rgb(172, 172, 220);
+  box-shadow: 100px;
+}
+.h3{
+  margin-top: -40px;
+  margin-left: 25px;
+  font-size: 25px;
+  
+}
+ /******** FEEDBACK (RESPONS) SECTION CODE *********/ 
+@media screen and (max-width: 600px) {
+.feedColumn {
+width: 100%;
+display: block;
+margin-bottom: 30px;
+}
+}
